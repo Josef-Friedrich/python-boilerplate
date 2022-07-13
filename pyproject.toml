@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "python_project_boilerplate"
+version = "0.1.0"
+description = "A collection of boilerplate files and templates for my Python projects."
+authors = ["Josef Friedrich <josef@friedrich.rocks>"]
+readme = "README.rst"
+repository = "https://github.com/Josef-Friedrich/python-project-boilerplate"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
