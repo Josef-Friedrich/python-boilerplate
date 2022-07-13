@@ -19,28 +19,29 @@ https://python-poetry.org/docs/cli/#version
 
     __version__ = metadata.version('python_project_boilerplate')
 
-
-Publish to PyPI
+Publish
 ---------------
 
-poetry build
-poetry publish
+Publish to PyPI
 
+.. code-block:: shell
+
+    poetry build
+    poetry publish
 
 rst
 ---
 
 https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections
 
+1. ``#`` with overline, for parts
+2. ``*`` with overline, for chapters
+3. ``=`` for sections
+4. ``-`` for subsections
+5. ``^`` for subsubsections
+6. ``"`` for paragraphs
 
-1. # with overline, for parts
-2. * with overline, for chapters
-3. = for sections
-4. - for subsections
-5. ^ for subsubsections
-6. " for paragraphs
-
-.. code-block:: rst
+.. code-block:: restructuredtext
 
     section
     =======
