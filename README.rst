@@ -1,3 +1,11 @@
+.. image:: http://img.shields.io/pypi/v/audiorename.svg
+    :target: https://pypi.python.org/pypi/audiorename
+    :alt: This package on the Python Package Index
+
+.. image:: https://github.com/Josef-Friedrich/python-project-boilerplate/actions/workflows/test.yml/badge.svg
+    :target: https://github.com/Josef-Friedrich/python-project-boilerplate/actions/workflows/test.yml
+    :alt: Tests
+
 python_project_boilerplate
 ==========================
 
