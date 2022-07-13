@@ -38,6 +38,27 @@ bump2version
     search = __version__ = '{current_version}'
     replace = __version__ = '{new_version}'
 
+Test
+----
+
+Place the test files in a folder named ``tests``. ``poetry new``
+creates a so called folder. Most projects use this named for the
+test folder.
+
+nose2
+^^^^^
+
+``tox.ini``
+
+.. code-block:: ini
+
+    [testenv]
+    basepython = python3.8
+    deps =
+        nose2
+    commands = nose2 {posargs}
+
+
 Publish
 -------
 

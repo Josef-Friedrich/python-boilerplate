@@ -73,5 +73,6 @@
     "**/.dmypy.json": true,
     "**/dmypy.json": true,
     "**/.pyre/": true
-  }
+  },
+  "esbonio.sphinx.confDir": ""
 }
