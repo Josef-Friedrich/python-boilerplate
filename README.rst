@@ -16,11 +16,10 @@ https://python-poetry.org/docs/cli/#version
 .. code-block:: python
 
     from importlib import metadata
-
     __version__ = metadata.version('python_project_boilerplate')
 
 Publish
----------------
+-------
 
 Publish to PyPI
 
@@ -40,6 +39,8 @@ https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections
 4. ``-`` for subsections
 5. ``^`` for subsubsections
 6. ``"`` for paragraphs
+
+We don’t use parts and chapters in the README files.
 
 .. code-block:: restructuredtext
 
