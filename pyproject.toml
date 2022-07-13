@@ -11,5 +11,5 @@ license = "MIT"
 python = "^3.8"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["poetry>=1.2.0b2"]
+build-backend = "poetry.masonry.api"

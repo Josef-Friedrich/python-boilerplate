@@ -104,3 +104,14 @@ We don’t use parts and chapters in the README files.
 
     paragraphs
     """"""""""
+
+Type hints
+----------
+
+To avoid circular imports
+
+.. code-block:: python
+
+    from typing import TYPE_CHECKING
+    if TYPE_CHECKING:
+        from . import Process
