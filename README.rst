@@ -18,6 +18,26 @@ https://python-poetry.org/docs/cli/#version
     from importlib import metadata
     __version__ = metadata.version('python_project_boilerplate')
 
+bump2version
+^^^^^^^^^^^^
+
+``.bumpversion.cfg```
+
+.. code-block:: ini
+
+    [bumpversion]
+    commit = True
+    tag = True
+    current_version = 0.1.0
+
+    [bumpversion:file:pyproject.toml]
+    search = version = "{current_version}"
+    replace = version = "{new_version}"
+
+    [bumpversion:file:python_project_boilerplate/__init__.py]
+    search = __version__ = '{current_version}'
+    replace = __version__ = '{new_version}'
+
 Publish
 -------
 
