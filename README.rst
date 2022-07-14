@@ -74,6 +74,8 @@ Publish to PyPI
 
 .. code-block:: shell
 
+    # https://pypi.org/manage/account/token/
+    poetry config pypi-token.pypi pypi-waS5vcmcCJ...
     poetry build
     poetry publish
 
