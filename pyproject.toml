@@ -9,6 +9,7 @@ repository = "https://github.com/Josef-Friedrich/python-project-boilerplate"
 license = "MIT" # GPL-3.0-only LGPL-2.1-only
 # https://pypi.org/classifiers/
 classifiers = [
+  "Private :: Do not Upload", # HTTP Error 400: Invalid value for classifiers. Error: Classifier 'Private :: Do not Upload' is not a valid classifier.
   "Development Status :: 5 - Production/Stable",
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.8",
