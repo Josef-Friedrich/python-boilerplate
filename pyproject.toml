@@ -5,7 +5,19 @@ description = "A collection of boilerplate files and templates for my Python pro
 authors = ["Josef Friedrich <josef@friedrich.rocks>"]
 readme = "README.rst"
 repository = "https://github.com/Josef-Friedrich/python-project-boilerplate"
-license = "MIT"
+# https://spdx.org/licenses/
+license = "MIT" # GPL-3.0-only LGPL-2.1-only
+# https://pypi.org/classifiers/
+classifiers = [
+  'Development Status :: 5 - Production/Stable',
+  'Programming Language :: Python :: 3 :: Only',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3',
+  'Topic :: Utilities',
+  'License :: OSI Approved :: MIT License', # 'License :: OSI Approved :: GNU General Public License v3 (GPLv3)', 'License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)'
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
