@@ -2,8 +2,8 @@
     :target: https://pypi.python.org/pypi/audiorename
     :alt: This package on the Python Package Index
 
-.. image:: https://github.com/Josef-Friedrich/python-project-boilerplate/actions/workflows/test.yml/badge.svg
-    :target: https://github.com/Josef-Friedrich/python-project-boilerplate/actions/workflows/test.yml
+.. image:: https://github.com/Josef-Friedrich/python-project-boilerplate/actions/workflows/tests.yml/badge.svg
+    :target: https://github.com/Josef-Friedrich/python-project-boilerplate/actions/workflows/tests.yml
     :alt: Tests
 
 python_project_boilerplate

@@ -1,6 +1,6 @@
 ---
-# https://hynek.me/articles/python-github-actions/
-name: Test
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+name: Tests
 
 on:
   push:
@@ -19,8 +19,10 @@ jobs:
         python-version: ['3.8', '3.9', '3.10']
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      # https://github.com/marketplace/actions/checkout
+      - uses: actions/checkout@v3
+      # https://github.com/marketplace/actions/setup-python
+      - uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
