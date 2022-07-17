@@ -66,11 +66,31 @@ nose2
 .. code-block:: ini
 
     [testenv]
-    basepython = python3.8
     deps =
         nose2
     commands = nose2 {posargs}
 
+pyenv
+^^^^^
+
+::
+
+    pyenv-enable.sh
+    pyenv update
+    pyenv install --list | grep " 3."
+    pyenv install 3.8.13
+    pyenv install 3.9.13
+    pyenv install 3.11.0b4
+    pyenv local 3.8.13 3.9.13 3.11.0b4
+    pip install tox tox-pyenv
+    tox
+    pyenv-disable.sh
+
+Run a single test
+
+::
+
+    tox -e quick -- -s test test_job.TestJobWithConfigParser.test_source
 
 Publish
 -------
