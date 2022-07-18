@@ -27,5 +27,11 @@ python = "^3.8"
 requires = ["poetry>=1.2.0b2"]
 build-backend = "poetry.masonry.api"
 
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+pattern = "(?P<base>\\d+\\.\\d+\\.\\d+)"
+
 [tool.poetry.scripts]
 "python-project-boilerplate.py" = "python_project_boilerplate:print_version"
