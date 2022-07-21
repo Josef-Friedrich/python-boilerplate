@@ -1,5 +1,5 @@
-.. image:: http://img.shields.io/pypi/v/audiorename.svg
-    :target: https://pypi.python.org/pypi/audiorename
+.. image:: http://img.shields.io/pypi/v/python-project-boilerplate.svg
+    :target: https://pypi.org/project/python-project-boilerplate
     :alt: This package on the Python Package Index
 
 .. image:: https://github.com/Josef-Friedrich/python-project-boilerplate/actions/workflows/tests.yml/badge.svg
@@ -20,7 +20,6 @@ Version
 ``poetry version <rule>``
 
 https://python-poetry.org/docs/cli/#version
-
 
 ``git tag -sa v1.2.3``
 
@@ -142,6 +141,21 @@ To avoid circular imports
     from typing import TYPE_CHECKING
     if TYPE_CHECKING:
         from . import Process
+
+https://peps.python.org/pep-0589/
+
+.. code-block:: python
+
+    from typing_extensions import Unpack, TypedDict
+
+    class MyKwargs(TypedDict, total=False):
+      foo: str
+      bar: int
+
+    def baz(**kwargs: Unpack[MyKwargs]) -> None:
+      pass
+
+    baz(foo="str", bar=3) # Pylance will affirm these types.
 
 Task runner
 -----------

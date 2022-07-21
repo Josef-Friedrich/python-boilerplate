@@ -139,6 +139,21 @@ To avoid circular imports
     if TYPE_CHECKING:
         from . import Process
 
+https://peps.python.org/pep-0589/
+
+.. code-block:: python
+
+    from typing_extensions import Unpack, TypedDict
+
+    class MyKwargs(TypedDict, total=False):
+      foo: str
+      bar: int
+
+    def baz(**kwargs: Unpack[MyKwargs]) -> None:
+      pass
+
+    baz(foo="str", bar=3) # Pylance will affirm these types.
+
 Task runner
 -----------
 
