@@ -8,6 +8,7 @@ __pycache__/
 dist/
 MANIFEST
 *.egg-info/
+*.venv/
 
 # Unit test / coverage reports
 .tox/
