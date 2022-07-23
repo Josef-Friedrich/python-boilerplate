@@ -16,6 +16,12 @@
   "[python]": {
     "editor.rulers": [79, 80, 88]
   },
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportPrivateImportUsage": "none",
+    "reportUnusedImport": "information",
+    "reportUnusedExpression": "information",
+    "reportImportCycles": "information"
+  },
   "python.defaultInterpreterPath": ".venv/bin/python",
   "python.testing.unittestArgs": [
     "-v",
