@@ -25,11 +25,6 @@ version = python_project_boilerplate.__version__
 release = python_project_boilerplate.__version__
 language = "en"
 
-
-templates_path = ["_templates"]
-
 exclude_patterns = ["_build"]
 
 html_theme = "alabaster"
-
-html_static_path = ["_static"]
