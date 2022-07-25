@@ -17,7 +17,6 @@ nosetests.xml
 
 # Sphinx documentation
 docs/_build/
-doc/html/
 
 # pyenv
 # .python-version
