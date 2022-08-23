@@ -175,6 +175,6 @@ Use subtree push to send it to the gh-pages branch on GitHub.
 
 .. code-block:: shell
 
-    touch cat docs/_build/.nojekyll
+    touch docs/_build/.nojekyll
 
     git subtree push --prefix docs/_build origin gh-pages
