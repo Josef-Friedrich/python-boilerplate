@@ -27,4 +27,17 @@ language = "en"
 
 exclude_patterns = ["_build"]
 
-html_theme = "alabaster"
+# https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#confval-autodoc_default_options
+autodoc_default_options = {
+    "members": True,
+    'member-order': "bysource",
+    'private-members': True,
+    'special-members': True,
+    'inherited-members': True,
+    "show-inheritance": True,
+    'ignore-module-all': True,
+    'imported-members': True,
+    'exclude-members': True,
+    'class-doc-from': True,
+    'no-value': True,
+}
