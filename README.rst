@@ -163,3 +163,16 @@ Task runner
 https://github.com/illBeRoy/taskipy
 
 https://github.com/nat-n/poethepoet
+
+Docs
+----
+
+https://gist.github.com/cobyism/4730490
+
+Use subtree push to send it to the gh-pages branch on GitHub.
+
+.. code-block:: shell
+
+    touch cat docs/_build/.nojekyll
+
+    git subtree push --prefix docs/_build origin gh-pages
