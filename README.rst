@@ -167,6 +167,11 @@ https://github.com/nat-n/poethepoet
 Docs
 ----
 
+https://github.com/Josef-Friedrich/python-project-boilerplate/settings/pages
+
+Source: Deploy from branch
+branch: gh-pages
+
 https://gist.github.com/cobyism/4730490
 
 Use subtree push to send it to the gh-pages branch on GitHub.
