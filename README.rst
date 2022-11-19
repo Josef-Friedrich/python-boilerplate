@@ -14,6 +14,15 @@ A collection of boilerplate files and templates for my Python projects.
 Maybe we should use:
 https://github.com/cookiecutter/cookiecutter
 
+
+poetry
+
+Poetry hangs:
+
+.. code-block:: ini
+
+    poetry config experimental.new-installer false
+
 Version
 -------
 
