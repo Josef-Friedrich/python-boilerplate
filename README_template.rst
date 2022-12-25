@@ -121,6 +121,10 @@ https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections
 5. ``^`` for subsubsections
 6. ``"`` for paragraphs
 
+A Literal Block::
+
+    LITERAL BLOCK
+
 We don’t use parts and chapters in the README files.
 
 .. code-block:: restructuredtext
