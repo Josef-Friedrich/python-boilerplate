@@ -9,7 +9,8 @@
 python_project_boilerplate
 ==========================
 
-## My other project boilerplates:
+My other project boilerplates:
+------------------------------
 
 * `TeX <https://github.com/Josef-Friedrich/tex-project-boilerplate>`_
 * `Python <https://github.com/Josef-Friedrich/python-project-boilerplate>`_
