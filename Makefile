@@ -1,4 +1,7 @@
+test:
+	poetry run tox
+
 doc:
 	poetry run tox -e docs
 
-.PHONY: doc
+.PHONY: test doc
