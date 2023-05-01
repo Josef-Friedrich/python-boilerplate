@@ -183,6 +183,19 @@ https://github.com/microsoft/pyright/issues/3002#issuecomment-1046100462
 
     baz(foo="str", bar=3) # Pylance will affirm these types.
 
+TypedDict
+^^^^^^^^^
+
+.. code-block:: python
+
+    from typing_extensions import TypedDict, Required, NotRequired
+
+    class _trending(TypedDict):
+        allStores: NotRequired[bool]
+        category: str
+        date: str
+        average: List[int]
+
 Task runner
 -----------
 
