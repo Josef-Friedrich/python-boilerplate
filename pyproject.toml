@@ -36,7 +36,7 @@ black = "^22.6.0"
 isort = "^5.10.1"
 
 [build-system]
-requires = ["poetry>=1.4.2"]
+requires = ["poetry>=1.5.1"]
 build-backend = "poetry.masonry.api"
 
 [tool.poetry-dynamic-versioning]
