@@ -207,3 +207,13 @@ Use subtree push to send it to the gh-pages branch on GitHub.
     touch docs/_build/.nojekyll
 
     git subtree push --prefix docs/_build origin gh-pages
+
+Stub packages
+-------------
+
+https://peps.python.org/pep-0561/#stub-only-packages
+
+* https://github.com/lxml/lxml-stubs
+* https://github.com/tk0miya/docutils-stubs
+* https://github.com/Josef-Friedrich/icinga2apic-stubs
+* https://github.com/Josef-Friedrich/nagiosplugin-stubs
