@@ -33,8 +33,6 @@ autopep8 = "^1.6.0"
 readme-patcher = "^0.5.0"
 # readme-patcher = { path = "../readme_patcher", develop = true }
 tox = "^3.25.1"
-black = "^22.6.0"
-isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core"]
