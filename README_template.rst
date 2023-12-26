@@ -221,3 +221,37 @@ Use subtree push to send it to the gh-pages branch on GitHub.
     touch docs/_build/.nojekyll
 
     git subtree push --prefix docs/_build origin gh-pages
+
+
+Stub packages
+-------------
+
+https://peps.python.org/pep-0561/#stub-only-packages
+
+* https://github.com/lxml/lxml-stubs
+* https://github.com/tk0miya/docutils-stubs
+* https://github.com/Josef-Friedrich/icinga2apic-stubs
+* https://github.com/Josef-Friedrich/nagiosplugin-stubs
+
+Add packages section to pyproject.toml
+
+.. code-block:: toml
+
+    [tool.poetry]
+    name = "icinga2apic-stubs"
+    version = "0.1.0"
+    description = "Type stubs for the icinga2apic package."
+    authors = ["Josef Friedrich <josef@friedrich.rocks>"]
+    readme = "README.rst"
+    repository = "https://github.com/Josef-Friedrich/icinga2apic-stubs"
+    license = "MIT"
+    packages = [
+        {include = "icinga2apic-stubs"}
+    ]
+
+    classifiers = [
+        "License :: OSI Approved :: MIT License",
+    ]
+
+    [tool.poetry.dependencies]
+    python = "^3.8"

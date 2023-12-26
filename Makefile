@@ -4,6 +4,9 @@ test:
 install:
 	poetry install
 
+install_editable:
+	pip install -e .
+
 update:
 	poetry lock
 	poetry install
@@ -15,7 +18,8 @@ publish:
 	poetry build
 	poetry publish
 
-doc:
+docs:
 	poetry run tox -e docs
+	xdg-open docs/_build/index.html
 
-.PHONY: test install update build publish doc
+.PHONY: test install install_editable update build publish docs
