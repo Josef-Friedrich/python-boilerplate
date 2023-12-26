@@ -23,11 +23,13 @@ https://github.com/cookiecutter/cookiecutter
 Poetry
 ------
 
-Poetry hangs:
+ansible-playbook playbook/all/p/poetry.yml
 
-.. code-block:: ini
+~/.config/pypoetry/config.toml
 
-    poetry config experimental.new-installer false
+.. code-block:: toml
+
+    virtualenvs.in-project = true
 
 Version
 -------
@@ -163,6 +165,19 @@ To avoid circular imports
     if TYPE_CHECKING:
         from . import Process
 
+TypedDict
+^^^^^^^^^
+
+.. code-block:: python
+
+    from typing_extensions import TypedDict, Required, NotRequired
+
+    class _trending(TypedDict):
+        allStores: NotRequired[bool]
+        category: str
+        date: str
+        average: List[int]
+
 Support for typed **kwargs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -182,19 +197,6 @@ https://github.com/microsoft/pyright/issues/3002#issuecomment-1046100462
       pass
 
     baz(foo="str", bar=3) # Pylance will affirm these types.
-
-TypedDict
-^^^^^^^^^
-
-.. code-block:: python
-
-    from typing_extensions import TypedDict, Required, NotRequired
-
-    class _trending(TypedDict):
-        allStores: NotRequired[bool]
-        category: str
-        date: str
-        average: List[int]
 
 Task runner
 -----------
