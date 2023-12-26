@@ -31,6 +31,13 @@ ansible-playbook playbook/all/p/poetry.yml
 
     virtualenvs.in-project = true
 
+Ruff 
+----
+
+pipx install ruff 
+
+https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
+
 Version
 -------
 
