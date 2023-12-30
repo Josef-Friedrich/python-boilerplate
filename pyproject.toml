@@ -32,7 +32,7 @@ mypy = "^0.961"
 autopep8 = "^1.6.0"
 readme-patcher = "^0.6.0"
 # readme-patcher = { path = "../readme_patcher", develop = true }
-tox = "^3.25.1"
+tox = "^4.11.4"
 ruff = "^0.1.9"
 nose2 = "^0.14.0"
 
