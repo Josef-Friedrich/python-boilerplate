@@ -81,6 +81,17 @@ Place the test files in a folder named ``tests``. ``poetry new``
 creates a so called folder. Most projects use this named for the
 test folder.
 
+pytest
+^^^^^^
+
+Convert unittests to pytest using `pytestify <https://github.com/dannysepler/pytestify>`_.
+
+
+
+
+
+littlefoxteam.vscode-python-test-adapter
+
 nose2
 ^^^^^
 
