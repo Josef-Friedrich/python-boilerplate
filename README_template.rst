@@ -87,9 +87,6 @@ pytest
 Convert unittests to pytest using `pytestify <https://github.com/dannysepler/pytestify>`_.
 
 
-
-
-
 littlefoxteam.vscode-python-test-adapter
 
 nose2
