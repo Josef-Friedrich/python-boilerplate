@@ -48,3 +48,6 @@ pattern = "(?P<base>\\d+\\.\\d+\\.\\d+)"
 
 [tool.poetry.scripts]
 "python-project-boilerplate.py" = "python_project_boilerplate:print_version"
+
+[tool.pyright]
+reportPrivateUsage = false
