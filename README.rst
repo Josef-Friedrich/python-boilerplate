@@ -88,16 +88,10 @@ Convert unittests to pytest using `pytestify <https://github.com/dannysepler/pyt
 
 littlefoxteam.vscode-python-test-adapter
 
-pyright
-^^^^^^^
-
-.. code-block:: toml
-
-    [tool.pyright]
-    reportPrivateUsage = false
-
 nose2
 ^^^^^
+
+use pytest instead
 
 ``tox.ini``
 
@@ -107,6 +101,14 @@ nose2
     deps =
         nose2
     commands = nose2 {posargs}
+
+pyright
+^^^^^^^
+
+.. code-block:: toml
+
+    [tool.pyright]
+    reportPrivateUsage = false
 
 pyenv
 ^^^^^
@@ -229,6 +231,10 @@ https://github.com/nat-n/poethepoet
 
 Docs
 ----
+
+Docstring formats: https://stackoverflow.com/a/24385103 
+
+use reST
 
 https://github.com/Josef-Friedrich/python-project-boilerplate/settings/pages
 
