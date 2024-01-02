@@ -15,6 +15,8 @@ classifiers = [
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3",
     "Topic :: Utilities",
     "License :: OSI Approved :: MIT License", # "License :: OSI Approved :: GNU General Public License v3 (GPLv3)", "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)"
@@ -27,7 +29,7 @@ poetry = "^1.7.1"
 
 [tool.poetry.group.dev.dependencies]
 beautifulsoup4 = "^4.11.1"
-pytest = "^5.2"
+pytest = "^7.4.4"
 mypy = "^0.961"
 autopep8 = "^1.6.0"
 readme-patcher = "^0.6.0"
@@ -51,3 +53,5 @@ pattern = "(?P<base>\\d+\\.\\d+\\.\\d+)"
 
 [tool.pyright]
 reportPrivateUsage = false
+reportUnusedExpression = false
+reportInvalidStringEscapeSequence = false
