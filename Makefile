@@ -26,4 +26,7 @@ docs:
 activate_venv:
 	source .venv/bin/activate
 
+pin_docs_requirements:
+	pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
+
 .PHONY: test install install_editable update build publish docs activate_venv
