@@ -4,6 +4,7 @@ test:
 install:
 	poetry install
 
+# https://github.com/python-poetry/poetry/issues/34#issuecomment-1054626460
 install_editable:
 	pip install -e .
 
@@ -22,4 +23,7 @@ docs:
 	poetry run tox -e docs
 	xdg-open docs/_build/index.html
 
-.PHONY: test install install_editable update build publish docs
+activate_venv:
+	source .venv/bin/activate
+
+.PHONY: test install install_editable update build publish docs activate_venv
