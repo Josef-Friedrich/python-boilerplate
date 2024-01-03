@@ -109,9 +109,10 @@ pyright
 
     [tool.pyright]
     reportPrivateUsage = false
-
-
-
+    reportPrivateUsage = false
+    reportUnusedExpression = false
+    reportInvalidStringEscapeSequence = false
+    
 pyenv
 ^^^^^
 
