@@ -181,8 +181,20 @@ We don’t use parts and chapters in the README files.
     paragraphs
     """"""""""
 
+
+
 Type hints
 ----------
+
+mypy 
+^^^^
+
+matangover.mypy
+
+.. code-block:: toml
+
+    [tool.mypy]
+    strict = true
 
 To avoid circular imports
 

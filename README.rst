@@ -109,6 +109,9 @@ pyright
 
     [tool.pyright]
     reportPrivateUsage = false
+    reportPrivateUsage = false
+    reportUnusedExpression = false
+    reportInvalidStringEscapeSequence = false
 
 pyenv
 ^^^^^
@@ -180,6 +183,16 @@ We don’t use parts and chapters in the README files.
 
 Type hints
 ----------
+
+mypy 
+^^^^
+
+matangover.mypy
+
+.. code-block:: toml
+
+    [tool.mypy]
+    strict = true
 
 To avoid circular imports
 
