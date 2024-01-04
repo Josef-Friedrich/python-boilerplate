@@ -24,6 +24,13 @@ jobs:
 
     # Build ####################################################################
 
+    # https://github.com/marketplace/actions/publish-python-poetry-package
+    - name: Publish to PyPI
+      uses: JRubics/poetry-publish@v1.17
+      with:
+        pypi_token: ${{ secrets.PYPI_API_TOKEN }}
+      if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+
     # https://github.com/marketplace/actions/pypi-publish
     - name: Build
       run: python setup.py sdist
@@ -33,12 +40,3 @@ jobs:
       with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
-
-    # or
-
-    # https://github.com/marketplace/actions/publish-python-poetry-package
-    - name: Publish to PyPI
-      uses: JRubics/poetry-publish@v1.17
-      with:
-        pypi_token: ${{ secrets.PYPI_API_TOKEN }}
-      if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
