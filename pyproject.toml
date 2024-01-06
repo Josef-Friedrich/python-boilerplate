@@ -24,6 +24,8 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
+fire = "^0.5.0"
+click = "^8.1.7"
 
 [tool.poetry.group.dev.dependencies]
 beautifulsoup4 = "^4.11.1"
@@ -49,6 +51,9 @@ pattern = "(?P<base>\\d+\\.\\d+\\.\\d+)"
 
 [tool.poetry.scripts]
 "python-project-boilerplate.py" = "python_boilerplate:print_version"
+"cli-with-fire.py" = "python_boilerplate.cli_with_fire:main"
+"cli-with-click_simple.py" = "python_boilerplate.cli_with_click.simple:main"
+"cli-with-click_multi-command-chaining.py" = "python_boilerplate.cli_with_click.multi_command_chaining:cli"
 
 [tool.pyright]
 reportPrivateUsage = false
