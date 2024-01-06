@@ -6,7 +6,7 @@
 
 import sphinx_rtd_theme
 
-import python_project_boilerplate
+import python_boilerplate
 
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
@@ -21,8 +21,8 @@ project = "Python project boilerplate"
 copyright = "2022, Josef Friedrich"
 author = "Josef Friedrich"
 
-version = python_project_boilerplate.__version__
-release = python_project_boilerplate.__version__
+version = python_boilerplate.__version__
+release = python_boilerplate.__version__
 language = "en"
 
 exclude_patterns = ["_build"]

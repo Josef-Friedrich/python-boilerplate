@@ -82,7 +82,7 @@ platformdirs==3.11.0
 poetry==1.7.1
     # via
     #   poetry-plugin-export
-    #   python_project_boilerplate (pyproject.toml)
+    #   python_boilerplate (pyproject.toml)
 poetry-core==1.8.1
     # via
     #   poetry
@@ -118,7 +118,7 @@ snowballstemmer==2.2.0
 sphinx==7.2.6
     # via
     #   -r docs/requirements.in
-    #   python_project_boilerplate (pyproject.toml)
+    #   python_boilerplate (pyproject.toml)
     #   sphinx-argparse
     #   sphinx-rtd-theme
     #   sphinxcontrib-applehelp

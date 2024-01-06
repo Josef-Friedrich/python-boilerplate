@@ -2,7 +2,7 @@
 
 {{ badge.github_workflow() }}
 
-python_project_boilerplate
+python_boilerplate
 ==========================
 
 My other project boilerplates:
@@ -52,7 +52,7 @@ https://semver.org/#is-v123-a-semantic-version
 .. code-block:: python
 
     from importlib import metadata
-    __version__ = metadata.version('python_project_boilerplate')
+    __version__ = metadata.version('python_boilerplate')
 
 bump2version
 ^^^^^^^^^^^^
@@ -70,7 +70,7 @@ bump2version
     search = version = "{current_version}"
     replace = version = "{new_version}"
 
-    [bumpversion:file:python_project_boilerplate/__init__.py]
+    [bumpversion:file:python_boilerplate/__init__.py]
     search = __version__ = '{current_version}'
     replace = __version__ = '{new_version}'
 

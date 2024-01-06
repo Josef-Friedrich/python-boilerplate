@@ -6,9 +6,9 @@
 Welcome to Python project boilerplate's documentation!
 ======================================================
 
-.. automodule:: python_project_boilerplate
+.. automodule:: python_boilerplate
 
-.. automodule:: python_project_boilerplate.debug
+.. automodule:: python_boilerplate.debug
 
 
 .. toctree::

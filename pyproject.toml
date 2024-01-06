@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "python_project_boilerplate"
+name = "python_boilerplate"
 version = "0.1.0"
 description = "A collection of boilerplate files and templates for my Python projects."
 authors = ["Josef Friedrich <josef@friedrich.rocks>"]
@@ -23,7 +23,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 
 [tool.poetry.group.dev.dependencies]
 beautifulsoup4 = "^4.11.1"
@@ -36,7 +36,6 @@ readme-patcher = "^0.6.0"
 # readme-patcher = { path = "../readme_patcher", develop = true }
 tox = "^4.11.4"
 ruff = "^0.1.9"
-nose2 = "^0.14.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -49,7 +48,7 @@ style = "semver"
 pattern = "(?P<base>\\d+\\.\\d+\\.\\d+)"
 
 [tool.poetry.scripts]
-"python-project-boilerplate.py" = "python_project_boilerplate:print_version"
+"python-project-boilerplate.py" = "python_boilerplate:print_version"
 
 [tool.pyright]
 reportPrivateUsage = false

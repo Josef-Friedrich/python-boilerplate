@@ -17,7 +17,7 @@
       "name": "Python: Specified File",
       "type": "python",
       "request": "launch",
-      "program": "python_project_boilerplate/debug.py",
+      "program": "python_boilerplate/debug.py",
       "justMyCode": true
     }
   ]

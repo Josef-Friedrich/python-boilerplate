@@ -1,8 +1,7 @@
 test:
 	poetry run tox
 
-install:
-	poetry install
+install: update
 
 # https://github.com/python-poetry/poetry/issues/34#issuecomment-1054626460
 install_editable:
