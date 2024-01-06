@@ -19,9 +19,15 @@ publish:
 	poetry build
 	poetry publish
 
+format:
+	poetry run tox -e format
+
 docs:
 	poetry run tox -e docs
 	xdg-open docs/_build/index.html > /dev/null 2>&1
+
+lint:
+	poetry run tox -e lint
 
 activate_venv:
 	source .venv/bin/activate
@@ -29,4 +35,4 @@ activate_venv:
 pin_docs_requirements:
 	pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
 
-.PHONY: test install install_editable update build publish docs activate_venv
+.PHONY: test install install_editable update build publish format docs lint activate_venv pin_docs_requirements
