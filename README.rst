@@ -31,10 +31,10 @@ ansible-playbook playbook/all/p/poetry.yml
 
     virtualenvs.in-project = true
 
-Ruff 
+Ruff
 ----
 
-pipx install ruff 
+pipx install ruff
 
 https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
 
@@ -184,7 +184,7 @@ We don’t use parts and chapters in the README files.
 Type hints
 ----------
 
-mypy 
+mypy
 ^^^^
 
 matangover.mypy
@@ -245,7 +245,7 @@ https://github.com/nat-n/poethepoet
 Docs
 ----
 
-Docstring formats: https://stackoverflow.com/a/24385103 
+Docstring formats: https://stackoverflow.com/a/24385103
 
 use reST
 
@@ -296,3 +296,17 @@ Add packages section to pyproject.toml
 
     [tool.poetry.dependencies]
     python = "^3.8"
+
+cli
+---
+
+* argparse
+* click
+
+cli autcompletion
+-----------------
+
+* https://pypi.org/project/shtab
+* https://pypi.org/project/argcomplete
+* https://github.com/dan1994/pyzshcomplete (not update since 3 years)
+* click
