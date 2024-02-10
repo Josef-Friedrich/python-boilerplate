@@ -29,7 +29,7 @@ exclude_patterns = ["_build"]
 
 # https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#confval-autodoc_default_options
 autodoc_default_options = {
-    # If set, autodoc will generate document for the members of the target module, class or exception.
+    # If set, autodoc will generate documention for the members of the target module, class or exception.
     "members": True,
     # This value selects if automatically documented members are sorted alphabetical (value 'alphabetical'), by member type (value 'groupwise') or by source order (value 'bysource'). The default is alphabetical.
     "member-order": "bysource",
