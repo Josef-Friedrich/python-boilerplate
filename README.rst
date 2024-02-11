@@ -45,10 +45,6 @@ Version
 
 https://python-poetry.org/docs/cli/#version
 
-``git tag -sa v1.2.3``
-
-https://semver.org/#is-v123-a-semantic-version
-
 .. code-block:: python
 
     from importlib import metadata

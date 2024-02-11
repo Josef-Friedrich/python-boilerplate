@@ -213,9 +213,7 @@ TypedDict
 Support for typed **kwargs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-https://peps.python.org/pep-0589/
-
-https://github.com/microsoft/pyright/issues/3002#issuecomment-1046100462
+https://docs.python.org/3/library/typing.html#typing.Unpack
 
 .. code-block:: python
 
