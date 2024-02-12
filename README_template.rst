@@ -257,7 +257,6 @@ Use subtree push to send it to the gh-pages branch on GitHub.
 
     git subtree push --prefix docs/_build origin gh-pages
 
-
 Stub packages
 -------------
 
