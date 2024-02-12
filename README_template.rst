@@ -3,15 +3,7 @@
 {{ badge.github_workflow() }}
 
 python_boilerplate
-==========================
-
-My other project boilerplates:
-------------------------------
-
-* `TeX <https://github.com/Josef-Friedrich/tex-project-boilerplate>`_
-* `Python <https://github.com/Josef-Friedrich/python-project-boilerplate>`_
-
-
+==================
 
 A collection of boilerplate files and templates for my Python projects.
 
