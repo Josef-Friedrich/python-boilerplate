@@ -30,15 +30,15 @@ click = "^8.1.7"
 [tool.poetry.group.dev.dependencies]
 beautifulsoup4 = "^4.11.1"
 poetry = "^1.7.1"
-Sphinx = "7"
-sphinx-rtd-theme = "2"
-pytest = "^7.4.4"
-mypy = "^0.961"
+Sphinx = "^7"
+sphinx-rtd-theme = "^2"
+pytest = "^8"
+mypy = "^1"
 autopep8 = "^1.6.0"
-readme-patcher = "^0.6.0"
+readme-patcher = "^0"
 # readme-patcher = { path = "../readme_patcher", develop = true }
-tox = "^4.11.4"
-ruff = "^0.1.9"
+tox = "^4"
+ruff = "^0"
 
 [build-system]
 requires = ["poetry-core"]
