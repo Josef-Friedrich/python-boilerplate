@@ -21,7 +21,6 @@ ansible-playbook playbook/all/p/poetry.yml
 
     virtualenvs.in-project = true
 
-
 Ruff
 ----
 
@@ -74,20 +73,6 @@ pytest
 Convert unittests to pytest using `pytestify <https://github.com/dannysepler/pytestify>`_.
 
 littlefoxteam.vscode-python-test-adapter
-
-nose2
-^^^^^
-
-use pytest instead
-
-``tox.ini``
-
-.. code-block:: ini
-
-    [testenv]
-    deps =
-        nose2
-    commands = nose2 {posargs}
 
 pyright
 ^^^^^^^
@@ -251,6 +236,9 @@ Use subtree push to send it to the gh-pages branch on GitHub.
 
 Stub packages
 -------------
+
+
+    stubgen .venv/lib/python3.10/site-packages/capturer
 
 https://peps.python.org/pep-0561/#stub-only-packages
 
