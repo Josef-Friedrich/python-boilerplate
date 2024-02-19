@@ -7,7 +7,7 @@
   "configurations": [
     {
       "name": "Python: Current File",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "program": "${file}",
       "console": "integratedTerminal",
@@ -15,7 +15,7 @@
     },
     {
       "name": "Python: Specified File",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "program": "python_boilerplate/debug.py",
       "justMyCode": true
