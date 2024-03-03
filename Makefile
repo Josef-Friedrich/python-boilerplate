@@ -3,11 +3,15 @@ test:
 
 install: update
 
+clear_poetry_cache:
+	poetry cache clear PyPI --all --no-interaction
+	poetry cache clear _default_cache --all --no-interaction
+
 # https://github.com/python-poetry/poetry/issues/34#issuecomment-1054626460
 install_editable:
 	pip install -e .
 
-update:
+update: clear_poetry_cache
 	poetry lock
 	poetry install
 
