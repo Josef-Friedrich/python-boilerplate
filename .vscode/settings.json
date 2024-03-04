@@ -28,6 +28,14 @@
     "reportImportCycles": "information"
   },
   "python.defaultInterpreterPath": ".venv/bin/python",
+  "esbonio.sphinx.confDir": "",
   "python.testing.pytestEnabled": true,
-  "esbonio.sphinx.confDir": ""
+  "python.testing.pytestArgs": [
+    "--capture=tee-sys",
+    "-vv",
+    "--rootdir",
+    "${workspaceFolder}/tests",
+    "-m",
+    "not (slow or gui)"
+  ]
 }
