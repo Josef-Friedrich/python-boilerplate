@@ -8,117 +8,39 @@ alabaster==0.7.13
     # via sphinx
 babel==2.14.0
     # via sphinx
-build==1.0.3
-    # via poetry
-cachecontrol[filecache]==0.13.1
-    # via
-    #   cachecontrol
-    #   poetry
 certifi==2023.11.17
     # via requests
-cffi==1.16.0
-    # via cryptography
 charset-normalizer==3.3.2
     # via requests
-cleo==2.1.0
-    # via poetry
-crashtest==0.4.1
-    # via
-    #   cleo
-    #   poetry
-cryptography==41.0.7
-    # via secretstorage
-distlib==0.3.8
-    # via virtualenv
+click==8.1.7
+    # via python_boilerplate (pyproject.toml)
 docutils==0.20.1
     # via
     #   sphinx
     #   sphinx-rtd-theme
-dulwich==0.21.7
-    # via poetry
-fastjsonschema==2.19.1
-    # via poetry
-filelock==3.13.1
-    # via
-    #   cachecontrol
-    #   virtualenv
+fire==0.5.0
+    # via python_boilerplate (pyproject.toml)
 idna==3.6
     # via requests
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==7.0.1
-    # via keyring
-installer==0.7.0
-    # via poetry
-jaraco-classes==3.3.0
-    # via keyring
-jeepney==0.8.0
-    # via
-    #   keyring
-    #   secretstorage
 jinja2==3.1.2
     # via sphinx
-keyring==24.3.0
-    # via poetry
 markupsafe==2.1.3
     # via jinja2
-more-itertools==10.1.0
-    # via jaraco-classes
-msgpack==1.0.7
-    # via cachecontrol
 packaging==23.2
-    # via
-    #   build
-    #   poetry
-    #   sphinx
-pexpect==4.9.0
-    # via poetry
-pkginfo==1.9.6
-    # via poetry
-platformdirs==3.11.0
-    # via
-    #   poetry
-    #   virtualenv
-poetry==1.7.1
-    # via
-    #   poetry-plugin-export
-    #   python_boilerplate (pyproject.toml)
-poetry-core==1.8.1
-    # via
-    #   poetry
-    #   poetry-plugin-export
-poetry-plugin-export==1.6.0
-    # via poetry
-ptyprocess==0.7.0
-    # via pexpect
-pycparser==2.21
-    # via cffi
+    # via sphinx
 pygments==2.17.2
     # via sphinx
-pyproject-hooks==1.0.0
-    # via
-    #   build
-    #   poetry
-rapidfuzz==3.6.1
-    # via cleo
 requests==2.31.0
-    # via
-    #   cachecontrol
-    #   poetry
-    #   requests-toolbelt
-    #   sphinx
-requests-toolbelt==1.0.0
-    # via poetry
-secretstorage==3.3.3
-    # via keyring
-shellingham==1.5.4
-    # via poetry
+    # via sphinx
+six==1.16.0
+    # via fire
 snowballstemmer==2.2.0
     # via sphinx
 sphinx==7.2.6
     # via
     #   -r docs/requirements.in
-    #   python_boilerplate (pyproject.toml)
     #   sphinx-argparse
     #   sphinx-rtd-theme
     #   sphinxcontrib-applehelp
@@ -145,20 +67,7 @@ sphinxcontrib-qthelp==1.0.6
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.9
     # via sphinx
-tomli==2.0.1
-    # via
-    #   build
-    #   poetry
-    #   pyproject-hooks
-tomlkit==0.12.3
-    # via poetry
-trove-classifiers==2023.11.29
-    # via poetry
+termcolor==2.4.0
+    # via fire
 urllib3==2.1.0
-    # via
-    #   dulwich
-    #   requests
-virtualenv==20.25.0
-    # via poetry
-zipp==3.17.0
-    # via importlib-metadata
+    # via requests
