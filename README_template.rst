@@ -219,12 +219,17 @@ Docstring formats: https://stackoverflow.com/a/24385103
 
 use reST
 
-https://github.com/Josef-Friedrich/python-project-boilerplate/settings/pages
+Format and convert Python docstrings and generates patches: `pyment <https://github.com/dadadel/pyment>`_
+
+Github pages
+------------
+
+`Settings / Pages <https://github.com/Josef-Friedrich/python-project-boilerplate/settings/pages>`_
 
 Source: Deploy from branch
 branch: gh-pages
 
-https://gist.github.com/cobyism/4730490
+`Deploying a subfolder to GitHub Pages <https://gist.github.com/cobyism/4730490>`_
 
 Use subtree push to send it to the gh-pages branch on GitHub.
 
@@ -281,5 +286,5 @@ cli autcompletion
 
 * https://pypi.org/project/shtab
 * https://pypi.org/project/argcomplete
-* https://github.com/dan1994/pyzshcomplete (not update since 3 years)
+* https://github.com/dan1994/pyzshcomplete (no update since 3 years)
 * click
