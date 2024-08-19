@@ -159,7 +159,9 @@ Type hints
 mypy
 ^^^^
 
-matangover.mypy
+`Mypy <https://www.mypy-lang.org/>`_ is an optional static type checker for Python.
+
+Visual Studio Code extensions: `matangover.mypy <https://marketplace.visualstudio.com/items?itemName=matangover.mypy>`_
 
 .. code-block:: toml
 
