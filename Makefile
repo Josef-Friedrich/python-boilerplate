@@ -11,8 +11,9 @@ clear_poetry_cache:
 	poetry cache clear _default_cache --all --no-interaction
 
 # https://github.com/python-poetry/poetry/issues/34#issuecomment-1054626460
+# pip install --editable . # error: externally-managed-environment -> pipx
 install_editable:
-	pip install -e .
+	pipx install --force --editable .
 
 update: clear_poetry_cache
 	poetry lock
@@ -34,6 +35,9 @@ docs:
 
 lint:
 	poetry run tox -e lint
+
+type_check:
+	poetry run tox -e type-check
 
 pin_docs_requirements:
 	pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml

@@ -1,3 +1,5 @@
+# https://docs.pytest.org/en/8.0.x/how-to/fixtures.html#scope-sharing-fixtures-across-classes-modules-packages-or-session
+
 from __future__ import annotations
 
 import os
