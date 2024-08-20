@@ -1,6 +1,9 @@
 test:
 	poetry run tox
 
+test_quick:
+	poetry run tox -e py312
+
 install: update
 
 clear_poetry_cache:
