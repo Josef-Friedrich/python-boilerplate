@@ -61,3 +61,6 @@ pattern = "(?P<base>\\d+\\.\\d+\\.\\d+)"
 reportPrivateUsage = false
 reportUnusedExpression = false
 reportInvalidStringEscapeSequence = false
+
+[tool.ruff.format]
+docstring-code-format = true
