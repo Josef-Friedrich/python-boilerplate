@@ -65,6 +65,5 @@ reportImportCycles = "information"
 reportPrivateUsage = false
 reportInvalidStringEscapeSequence = false
 
-
 [tool.ruff.format]
 docstring-code-format = true
