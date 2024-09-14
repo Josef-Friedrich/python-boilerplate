@@ -58,9 +58,13 @@ pattern = "(?P<base>\\d+\\.\\d+\\.\\d+)"
 "cli-with-click_multi-command-chaining.py" = "python_boilerplate.cli_with_click.multi_command_chaining:cli"
 
 [tool.pyright]
+reportPrivateImportUsage = "none"
+reportUnusedExpression = "information"
+reportUnusedImport = "information"
+reportImportCycles = "information"
 reportPrivateUsage = false
-reportUnusedExpression = false
 reportInvalidStringEscapeSequence = false
+
 
 [tool.ruff.format]
 docstring-code-format = true
