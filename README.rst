@@ -157,6 +157,13 @@ We don’t use parts and chapters in the README files.
     paragraphs
     """"""""""
 
+Include an image from an URL:
+
+.. code-block:: restructuredtext
+
+    .. image:: https://raw.githubusercontent.com/Josef-Friedrich/phrydy/refs/heads/main/docs/Type-hints.gif
+        :alt: Type-hints.gif
+
 Type hints
 ----------
 
