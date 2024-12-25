@@ -39,6 +39,7 @@ readme-patcher = "^0"
 # readme-patcher = { path = "../readme_patcher", develop = true }
 tox = "^4"
 ruff = "^0"
+pip-tools = "^7"
 
 [build-system]
 requires = ["poetry-core"]

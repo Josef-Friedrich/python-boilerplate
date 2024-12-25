@@ -41,6 +41,6 @@ type_check:
 
 pin_docs_requirements:
 	pipx install pip-tools
-	pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
+	poetry run pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
 
 .PHONY: test install install_editable update build publish format docs lint pin_docs_requirements
