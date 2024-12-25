@@ -12,8 +12,6 @@ classifiers = [
     "Private :: Do not Upload", # HTTP Error 400: Invalid value for classifiers. Error: Classifier 'Private :: Do not Upload' is not a valid classifier.
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -25,18 +23,18 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 fire = "^0.5.0"
 click = "^8.1.7"
 
 [tool.poetry.group.dev.dependencies]
-beautifulsoup4 = "^4.11.1"
-poetry = "^1.7.1"
-Sphinx = "^7"
-sphinx-rtd-theme = "^2"
+beautifulsoup4 = "^4"
+poetry = "^1"
+Sphinx = "^8"
+sphinx-rtd-theme = "^3"
 pytest = "^8"
 mypy = "^1"
-autopep8 = "^1.6.0"
+autopep8 = "^2"
 readme-patcher = "^0"
 # readme-patcher = { path = "../readme_patcher", develop = true }
 tox = "^4"

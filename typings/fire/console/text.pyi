@@ -24,16 +24,18 @@ class TypedText:
     def __add__(self, other): ...
     def __radd__(self, other): ...
 
-class _TextTypes(enum.Enum):
+class _TextTypes(enum.Enum):  # type: ignore
     def __call__(self, *args): ...
 
 class TextTypes(_TextTypes):
-    RESOURCE_NAME: int
-    URL: int
-    USER_INPUT: int
-    COMMAND: int
-    INFO: int
-    URI: int
-    OUTPUT: int
-    PT_SUCCESS: int
-    PT_FAILURE: int
+    """Defines text types that can be used for styling text."""
+
+    RESOURCE_NAME = 1
+    URL = 2
+    USER_INPUT = 3
+    COMMAND = 4
+    INFO = 5
+    URI = 6
+    OUTPUT = 7
+    PT_SUCCESS = 8
+    PT_FAILURE = 9

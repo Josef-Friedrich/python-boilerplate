@@ -30,16 +30,16 @@ class Namespace(dict):
     def __delattr__(self, key) -> None: ...
 
 class Sections(enum.Enum):
-    ARGS: int
-    RETURNS: int
-    YIELDS: int
-    RAISES: int
-    TYPE: int
+    ARGS = 0
+    RETURNS = 1
+    YIELDS = 2
+    RAISES = 3
+    TYPE = 4
 
 class Formats(enum.Enum):
-    GOOGLE: int
-    NUMPY: int
-    RST: int
+    GOOGLE = 0
+    NUMPY = 1
+    RST = 2
 
 SECTION_TITLES: Incomplete
 
