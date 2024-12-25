@@ -36,6 +36,8 @@ pytest = "^8"
 mypy = "^1"
 autopep8 = "^2"
 readme-patcher = "^0"
+# https://python-poetry.org/docs/dependency-specification/#git-dependencies
+# requests = { git = "https://github.com/requests/requests.git" }
 # readme-patcher = { path = "../readme_patcher", develop = true }
 tox = "^4"
 ruff = "^0"
