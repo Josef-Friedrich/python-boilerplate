@@ -33,13 +33,13 @@ docs:
 	poetry run tox -e docs
 	xdg-open docs/_build/index.html > /dev/null 2>&1
 
+pin_docs_requirements:
+	poetry run pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
+
 lint:
 	poetry run tox -e lint
 
 type_check:
 	poetry run tox -e type-check
-
-pin_docs_requirements:
-	poetry run pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
 
 .PHONY: test install install_editable update build publish format docs lint pin_docs_requirements
