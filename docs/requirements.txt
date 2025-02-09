@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
 #
-alabaster==0.7.13
+alabaster==1.0.0
     # via sphinx
 babel==2.14.0
     # via sphinx
@@ -38,13 +38,12 @@ six==1.16.0
     # via fire
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==7.2.6
+sphinx==8.0.2
     # via
     #   -r docs/requirements.in
     #   sphinx-argparse
     #   sphinx-rtd-theme
     #   sphinxcontrib-applehelp
-    #   sphinxcontrib-devhelp
     #   sphinxcontrib-htmlhelp
     #   sphinxcontrib-jquery
     #   sphinxcontrib-qthelp
@@ -55,7 +54,7 @@ sphinx-rtd-theme==3.0.2
     # via -r docs/requirements.in
 sphinxcontrib-applehelp==1.0.7
     # via sphinx
-sphinxcontrib-devhelp==1.0.5
+sphinxcontrib-devhelp==2.0.0
     # via sphinx
 sphinxcontrib-htmlhelp==2.0.4
     # via sphinx
