@@ -5,7 +5,7 @@ test:
 	uv run --isolated --python=3.13 pytest
 
 test_quick:
-	poetry run tox -e py312
+	uv run --isolated --python=3.12 pytest
 
 install: update
 
@@ -23,11 +23,11 @@ update: clear_poetry_cache
 	poetry install
 
 build:
-	poetry build
+	uv build
 
 publish:
-	poetry build
-	poetry publish
+	uv build
+	uv publish
 
 format:
 	uv run ruff check --select I --fix .
@@ -39,7 +39,7 @@ docs:
 	xdg-open docs/_build/index.html > /dev/null 2>&1
 
 pin_docs_requirements:
-	poetry run pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
+	uv run pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
 
 lint:
 	uv run ruff check
