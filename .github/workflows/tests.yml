@@ -11,12 +11,7 @@ on:
 
 jobs:
   tests:
-    name: Python ${{ matrix.python-version }}
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        python-version: ["3.10", "3.11", "3.12", "3.13"]
 
     steps:
       # https://github.com/marketplace/actions/checkout
@@ -34,6 +29,5 @@ jobs:
       - name: Install the project
         run: uv sync --locked --all-extras --dev
 
-      # https://github.com/ymyzk/tox-gh-actions
-      - name: Run tox targets for ${{ matrix.python-version }}
-        run: uv run pytest tests
+      - name: Run make test
+        run: make test
