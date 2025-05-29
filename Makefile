@@ -11,18 +11,8 @@ test_quick:
 
 install: update
 
-clear_poetry_cache:
-	poetry cache clear PyPI --all --no-interaction
-	poetry cache clear _default_cache --all --no-interaction
-
-# https://github.com/python-poetry/poetry/issues/34#issuecomment-1054626460
-# pip install --editable . # error: externally-managed-environment -> pipx
-install_editable:
-	pipx install --force --editable .
-
-update: clear_poetry_cache
-	poetry lock
-	poetry install
+update:
+	uv sync --upgrade
 
 build:
 	uv build
@@ -38,7 +28,6 @@ format:
 docs:
 	uv run --isolated --python=3.13 --upgrade readme-patcher
 	uv run sphinx-build -W -q docs docs/_build
-	xdg-open docs/_build/index.html > /dev/null 2>&1
 
 pin_docs_requirements:
 	uv run pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
