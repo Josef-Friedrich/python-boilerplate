@@ -1,3 +1,5 @@
+all: test format docs lint type_check
+
 test:
 	uv run --isolated --python=3.10 pytest
 	uv run --isolated --python=3.11 pytest
@@ -34,7 +36,7 @@ format:
 	uv run ruff format
 
 docs:
-	# uv run --isolated --python=3.13 readme-patcher
+	uv run --isolated --python=3.13 --upgrade readme-patcher
 	uv run sphinx-build -W -q docs docs/_build
 	xdg-open docs/_build/index.html > /dev/null 2>&1
 

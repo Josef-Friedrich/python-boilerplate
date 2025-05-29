@@ -29,5 +29,5 @@ jobs:
       - name: Install the project
         run: uv sync --locked --all-extras --dev
 
-      - name: Run make test
-        run: make test
+      - name: Run make all
+        run: make all
