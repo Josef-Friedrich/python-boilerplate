@@ -30,19 +30,21 @@ publish:
 	poetry publish
 
 format:
-	poetry run tox -e format
+	uv run ruff check --select I --fix .
+	uv run ruff format
 
 docs:
-	poetry run tox -e docs
+	# uv run --isolated --python=3.13 readme-patcher
+	uv run sphinx-build -W -q docs docs/_build
 	xdg-open docs/_build/index.html > /dev/null 2>&1
 
 pin_docs_requirements:
 	poetry run pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
 
 lint:
-	poetry run tox -e lint
+	uv run ruff check
 
 type_check:
-	poetry run tox -e type-check
+	uv run mypy typings python_boilerplate tests
 
 .PHONY: test install install_editable update build publish format docs lint pin_docs_requirements
