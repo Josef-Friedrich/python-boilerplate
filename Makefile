@@ -1,5 +1,8 @@
 test:
-	poetry run tox
+	uv run --isolated --python=3.10 pytest
+	uv run --isolated --python=3.11 pytest
+	uv run --isolated --python=3.12 pytest
+	uv run --isolated --python=3.13 pytest
 
 test_quick:
 	poetry run tox -e py312

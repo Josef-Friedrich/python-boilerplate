@@ -14,9 +14,14 @@ https://github.com/cookiecutter/cookiecutter
 uv
 --
 
+https://lukasatkinson.de/2025/just-dont-tox/
+
 .. code-block::
 
     uvx migrate-to-uv
+
+    uv tool install tox --with tox-uv
+
 
 Poetry
 ------
