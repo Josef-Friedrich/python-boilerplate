@@ -10,6 +10,14 @@ A collection of boilerplate files and templates for my Python projects.
 Maybe we should use:
 https://github.com/cookiecutter/cookiecutter
 
+
+uv
+--
+
+.. code-block::
+
+    uvx migrate-to-uv
+
 Poetry
 ------
 

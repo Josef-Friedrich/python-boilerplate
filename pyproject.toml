@@ -1,15 +1,13 @@
-[tool.poetry]
+[project]
 name = "python_boilerplate"
 version = "0.1.0"
 description = "A collection of boilerplate files and templates for my Python projects."
-authors = ["Josef Friedrich <josef@friedrich.rocks>"]
+authors = [{ name = "Josef Friedrich", email = "josef@friedrich.rocks" }]
+requires-python = "~=3.10"
 readme = "README.rst"
-repository = "https://github.com/Josef-Friedrich/python-project-boilerplate"
-# https://spdx.org/licenses/
-license = "MIT" # GPL-3.0-only LGPL-2.1-only
-# https://pypi.org/classifiers/
+license = "MIT"
 classifiers = [
-    "Private :: Do not Upload", # HTTP Error 400: Invalid value for classifiers. Error: Classifier 'Private :: Do not Upload' is not a valid classifier.
+    "Private :: Do not Upload",
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
@@ -19,45 +17,46 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Topic :: Utilities",
     "Typing :: Stubs Only",
-    "License :: OSI Approved :: MIT License", # "License :: OSI Approved :: GNU General Public License v3 (GPLv3)", "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)"
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "fire>=0.5.0,<0.6",
+    "click>=8.1.7,<9",
 ]
 
-[tool.poetry.dependencies]
-python = "^3.10"
-fire = "^0.5.0"
-click = "^8.1.7"
+[project.urls]
+Repository = "https://github.com/Josef-Friedrich/python-project-boilerplate"
 
-[tool.poetry.group.dev.dependencies]
-beautifulsoup4 = "^4"
-poetry = "^1"
-Sphinx = "^8"
-sphinx-rtd-theme = "^3"
-pytest = "^8"
-mypy = "^1"
-autopep8 = "^2"
-readme-patcher = "^0"
-# https://python-poetry.org/docs/dependency-specification/#git-dependencies
-# requests = { git = "https://github.com/requests/requests.git" }
-# readme-patcher = { path = "../readme_patcher", develop = true }
-tox = "^4"
-ruff = "^0"
-pip-tools = "^7"
+[project.scripts]
+"python-project-boilerplate.py" = "python_boilerplate:print_version"
+"cli-with-fire.py" = "python_boilerplate.cli_with_fire:main"
+"cli-with-click_simple.py" = "python_boilerplate.cli_with_click.simple:main"
+"cli-with-click_multi-command-chaining.py" = "python_boilerplate.cli_with_click.multi_command_chaining:cli"
+
+[dependency-groups]
+dev = [
+    "beautifulsoup4>=4,<5",
+    "poetry>=1,<2",
+    "Sphinx>=8,<9",
+    "sphinx-rtd-theme>=3,<4",
+    "pytest>=8,<9",
+    "mypy>=1,<2",
+    "autopep8>=2,<3",
+    "readme-patcher>=0,<1",
+    "tox>=4,<5",
+    "ruff>=0,<1",
+    "pip-tools>=7,<8",
+]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.poetry-dynamic-versioning]
 enable = true
 vcs = "git"
 style = "semver"
 pattern = "(?P<base>\\d+\\.\\d+\\.\\d+)"
-
-[tool.poetry.scripts]
-"python-project-boilerplate.py" = "python_boilerplate:print_version"
-"cli-with-fire.py" = "python_boilerplate.cli_with_fire:main"
-"cli-with-click_simple.py" = "python_boilerplate.cli_with_click.simple:main"
-"cli-with-click_multi-command-chaining.py" = "python_boilerplate.cli_with_click.multi_command_chaining:cli"
 
 [tool.pyright]
 reportPrivateImportUsage = "none"
