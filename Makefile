@@ -26,7 +26,7 @@ format:
 	uv run ruff format
 
 docs:
-	uv run --isolated --python=3.13 --upgrade readme-patcher
+	uv run --isolated readme-patcher
 	uv run sphinx-build -W -q docs docs/_build
 
 pin_docs_requirements:
