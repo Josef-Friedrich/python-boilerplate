@@ -1,7 +1,15 @@
 ---
-# https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/
+
+# Create an environment called pypi
+# https://github.com/Josef-Friedrich/<repo>/settings/environments
+
+# Create a new trusted publisher
+# https://pypi.org/manage/project/<name>/settings/publishing/
 
 # https://medium.com/@nipunweerasiri/publishing-python-packages-to-pypi-using-uv-and-github-workflows-with-trusted-publishing-47bdfab162db
+# https://docs.pypi.org/trusted-publishers/
+# https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/
+
 
 name: Build and Publish to PyPI
 
