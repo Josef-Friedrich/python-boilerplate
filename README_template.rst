@@ -10,7 +10,6 @@ A collection of boilerplate files and templates for my Python projects.
 Maybe we should use:
 https://github.com/cookiecutter/cookiecutter
 
-
 uv
 --
 
@@ -21,18 +20,6 @@ https://lukasatkinson.de/2025/just-dont-tox/
     uvx migrate-to-uv
 
     uv tool install tox --with tox-uv
-
-
-Poetry
-------
-
-ansible-playbook playbook/all/p/poetry.yml
-
-~/.config/pypoetry/config.toml
-
-.. code-block:: toml
-
-    virtualenvs.in-project = true
 
 Ruff
 ----
@@ -97,22 +84,6 @@ pyright
     reportPrivateUsage = false
     reportUnusedExpression = false
     reportInvalidStringEscapeSequence = false
-
-pyenv
-^^^^^
-
-::
-
-    pyenv-enable.sh
-    pyenv update
-    pyenv install --list | grep " 3."
-    pyenv install 3.8.13
-    pyenv install 3.9.13
-    pyenv install 3.11.0b4
-    pyenv local 3.8.13 3.9.13 3.11.0b4
-    pip install tox tox-pyenv
-    tox
-    pyenv-disable.sh
 
 Run a single test
 
