@@ -13,7 +13,21 @@ https://github.com/cookiecutter/cookiecutter
 uv
 --
 
+Initialize a project:
+
+.. code-block::
+
+    uv init
+
+Add dependency
+
+.. code-block::
+
+    uv add pytest
+
 https://lukasatkinson.de/2025/just-dont-tox/
+
+Migrate from poetry
 
 .. code-block::
 
