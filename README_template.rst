@@ -35,6 +35,20 @@ Migrate from poetry
 
     uv tool install tox --with tox-uv
 
+Command-line interfaces
+
+.. code-block:: toml
+
+    [project.scripts]
+    texluacats = "manage:cli"
+
+Install in editable mode
+
+.. code-block:: toml
+
+    uv pip install --editable .
+    ln -s $HOME/repos/TeXLuaCATS/manager/.venv/bin/texluacats $HOME/.local/bin/texluacats
+
 Ruff
 ----
 
