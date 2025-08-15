@@ -1,18 +1,18 @@
 import click
 
-# https://click.palletsprojects.com/en/8.1.x/commands/#multi-command-chaining
+# https://click.palletsprojects.com/en/stable/commands/#command-chaining
 
 
 @click.group(chain=True)
-def cli():
+def cli() -> None:
     pass
 
 
 @cli.command("sdist")
-def sdist():
+def sdist() -> None:
     click.echo("sdist called")
 
 
 @cli.command("bdist_wheel")
-def bdist_wheel():
+def bdist_wheel() -> None:
     click.echo("bdist_wheel called")

@@ -1,6 +1,6 @@
 import click
 
-# https://click.palletsprojects.com/en/8.1.x/
+# https://click.palletsprojects.com/en/stable/
 
 
 @click.command()
