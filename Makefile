@@ -11,6 +11,9 @@ test_quick:
 
 install: update
 
+install_editable: install
+	uv pip install --editable .
+
 update:
 	uv sync --upgrade
 
