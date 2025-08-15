@@ -3,7 +3,7 @@ name = "python_boilerplate"
 version = "0.1.0"
 description = "A collection of boilerplate files and templates for my Python projects."
 authors = [{ name = "Josef Friedrich", email = "josef@friedrich.rocks" }]
-requires-python = "~=3.10"
+requires-python = ">=3.10"
 readme = "README.rst"
 license = { text = "MIT" }
 classifiers = [
@@ -19,7 +19,11 @@ classifiers = [
     "Typing :: Stubs Only",
     "License :: OSI Approved :: MIT License",
 ]
-dependencies = ["fire>=0.5.0,<0.6", "click>=8.1.7,<9"]
+dependencies = [
+    "fire>=0.5.0,<0.6",
+    "click>=8.1.7,<9",
+    "jinja2>=3.1.6",
+]
 
 [project.urls]
 Repository = "https://github.com/Josef-Friedrich/python-project-boilerplate"
