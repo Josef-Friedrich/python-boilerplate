@@ -3,8 +3,8 @@
 from __future__ import annotations
 
 import os
-from pathlib import Path
 import shutil
+from pathlib import Path
 from typing import Any, Callable, Generator, Union
 
 import pytest
@@ -57,4 +57,5 @@ def copy_to_tmp(tmp_path: Path, files_dir: Path) -> Callable[[Union[str, Path]],
         dest: Path = tmp_path / src.name
         shutil.copy(files_dir / src, dest)
         return dest
+
     return _copy

@@ -17,13 +17,41 @@ https://github.com/cookiecutter/cookiecutter
 uv
 --
 
+Initialize a project:
+
+.. code-block::
+
+    uv init
+
+Add dependency
+
+.. code-block::
+
+    uv add pytest
+
 https://lukasatkinson.de/2025/just-dont-tox/
+
+Migrate from poetry
 
 .. code-block::
 
     uvx migrate-to-uv
 
     uv tool install tox --with tox-uv
+
+Command-line interfaces
+
+.. code-block:: toml
+
+    [project.scripts]
+    texluacats = "manage:cli"
+
+Install in editable mode
+
+.. code-block:: toml
+
+    uv pip install --editable .
+    ln -s $HOME/repos/TeXLuaCATS/manager/.venv/bin/texluacats $HOME/.local/bin/texluacats
 
 Ruff
 ----

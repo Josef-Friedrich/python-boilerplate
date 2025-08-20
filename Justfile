@@ -12,7 +12,7 @@ set positional-arguments
 	uv run --isolated --python=3.13 pytest -m "not (slow or gui)"
 
 @docs:
-	uv run --isolated readme-patcherr
+	uv run --isolated readme-patcher
 	sphinx-build -W -q docs docs/_build
 
 @format:
