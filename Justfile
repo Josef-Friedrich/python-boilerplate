@@ -6,10 +6,10 @@ set positional-arguments
 @all: test docs format
 
 @test:
-	uv run --isolated --python=3.10 pytest
-	uv run --isolated --python=3.11 pytest
-	uv run --isolated --python=3.12 pytest
-	uv run --isolated --python=3.13 pytest
+	uv run --isolated --python=3.10 pytest -m "not (slow or gui)"
+	uv run --isolated --python=3.11 pytest -m "not (slow or gui)"
+	uv run --isolated --python=3.12 pytest -m "not (slow or gui)"
+	uv run --isolated --python=3.13 pytest -m "not (slow or gui)"
 
 @docs:
 	uv run --isolated readme-patcherr
