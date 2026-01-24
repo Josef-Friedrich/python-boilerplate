@@ -49,6 +49,10 @@ Install in editable mode
     uv pip install --editable .
     ln -s $HOME/repos/TeXLuaCATS/manager/.venv/bin/texluacats $HOME/.local/bin/texluacats
 
+Upgrade pyproject.toml
+
+https://github.com/Alirex/uv_upgrade
+
 Ruff
 ----
 
