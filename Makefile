@@ -33,7 +33,8 @@ docs:
 	uv run sphinx-build -W -q docs docs/_build
 
 pin_docs_requirements:
-	uv run pip-compile --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
+	rm -rf docs/requirements.txt
+	uv run pip-compile --strip-extras --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
 
 lint:
 	uv run ruff check
