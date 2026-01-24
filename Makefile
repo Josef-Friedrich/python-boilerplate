@@ -40,6 +40,6 @@ lint:
 	uv run ruff check
 
 type_check:
-	uv run mypy typings python_boilerplate tests
+	uv run mypy typings src/python_boilerplate tests
 
 .PHONY: test install install_editable update build publish format docs lint pin_docs_requirements
