@@ -10,7 +10,6 @@ extensions: list[str] = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
     "sphinx.ext.viewcode",
-    "sphinxcontrib.jquery",
 ]
 
 project = "Python project boilerplate"
