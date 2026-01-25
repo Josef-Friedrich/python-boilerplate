@@ -17,6 +17,8 @@ install_editable: install
 update:
 	uv sync --upgrade
 
+upgrade: update
+
 build:
 	uv build
 
@@ -44,4 +46,4 @@ lint:
 type_check:
 	uv run mypy typings src/python_boilerplate tests
 
-.PHONY: test install install_editable update build publish format docs lint pin_docs_requirements
+.PHONY: test install install_editable update upgrade build publish format docs lint pin_docs_requirements
