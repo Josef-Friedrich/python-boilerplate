@@ -57,6 +57,12 @@ docs = {requires-python = ">=3.12"}
 requires = ["uv_build>=0.9.26,<0.10.0"]
 build-backend = "uv_build"
 
+# Single file, for example ./userdetect.py
+# [tool.uv.build-backend]
+# module-name = "userdetect"
+# module-root = ""
+# namespace = true
+
 [tool.poetry-dynamic-versioning]
 enable = true
 vcs = "git"
