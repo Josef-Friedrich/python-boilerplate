@@ -27,8 +27,8 @@ publish:
 	uv publish
 
 format:
-	uv run ruff check --select I --fix .
-	uv run ruff format
+	uv tool run ruff check --select I --fix .
+	uv tool run ruff format
 
 docs: docs_readme_patcher docs_sphinx
 
@@ -45,7 +45,7 @@ pin_docs_requirements:
 	uv run pip-compile --strip-extras --output-file=docs/requirements.txt docs/requirements.in pyproject.toml
 
 lint:
-	uv run ruff check
+	uv tool run ruff check
 
 type_check:
-	uv run mypy typings src/python_boilerplate tests
+	uv tool run mypy typings src/python_boilerplate tests

@@ -3,7 +3,7 @@ name = "python_boilerplate"
 version = "0.1.0"
 description = "A collection of boilerplate files and templates for my Python projects."
 authors = [{ name = "Josef Friedrich", email = "josef@friedrich.rocks" }]
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 readme = "README.rst"
 license = { text = "MIT" }
 classifiers = [
@@ -20,8 +20,8 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
-    "fire>=0.5.0,<0.6",
-    "click>=8.1.7,<9",
+    "click>=8.3.1",
+    "fire>=0.5.0",
     "jinja2>=3.1.6",
 ]
 
@@ -36,22 +36,9 @@ Repository = "https://github.com/Josef-Friedrich/python-project-boilerplate"
 
 [dependency-groups]
 dev = [
-    "beautifulsoup4>=4,<5",
-    "pytest>=8,<9",
-    "mypy>=1,<2",
-    "autopep8>=2,<3",
-    "readme-patcher",
-    "tox>=4,<5",
-    "ruff>=0,<1",
-    "pip-tools>=7,<8",
+    "beautifulsoup4>=4.14.3",
+    "pytest>=8.4.2",
 ]
-docs = [
-    "sphinx>=9.1.0",
-    "sphinx-rtd-theme>=3.1.0",
-]
-
-[tool.uv.dependency-groups]
-docs = {requires-python = ">=3.12"}
 
 [build-system]
 requires = ["uv_build>=0.9.26,<0.10.0"]
@@ -79,9 +66,6 @@ reportInvalidStringEscapeSequence = false
 
 [tool.ruff.format]
 docstring-code-format = true
-
-[tool.uv.sources]
-readme-patcher = { git = "https://github.com/Josef-Friedrich/readme_patcher.git", branch = "main" }
 
 [tool.pytest.ini_options]
 markers = [
