@@ -17,6 +17,7 @@ click==8.3.1
 docutils==0.22.4
     # via
     #   sphinx
+    #   sphinx-argparse
     #   sphinx-rtd-theme
 fire==0.5.0
     # via python_boilerplate (pyproject.toml)
@@ -45,8 +46,11 @@ snowballstemmer==3.0.1
 sphinx==9.1.0
     # via
     #   -r docs/requirements.in
+    #   sphinx-argparse
     #   sphinx-rtd-theme
     #   sphinxcontrib-jquery
+sphinx-argparse==0.5.2
+    # via -r docs/requirements.in
 sphinx-rtd-theme==3.1.0
     # via -r docs/requirements.in
 sphinxcontrib-applehelp==2.0.0
