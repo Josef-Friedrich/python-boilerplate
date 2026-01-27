@@ -3,7 +3,7 @@ name = "python_boilerplate"
 version = "0.1.0"
 description = "A collection of boilerplate files and templates for my Python projects."
 authors = [{ name = "Josef Friedrich", email = "josef@friedrich.rocks" }]
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 readme = "README.rst"
 license = { text = "MIT" }
 classifiers = [
@@ -21,7 +21,7 @@ classifiers = [
 ]
 dependencies = [
     "click>=8.3.1",
-    "fire>=0.5.0",
+    "fire>=0.7.1",
     "jinja2>=3.1.6",
 ]
 
@@ -37,7 +37,7 @@ Repository = "https://github.com/Josef-Friedrich/python-project-boilerplate"
 [dependency-groups]
 dev = [
     "beautifulsoup4>=4.14.3",
-    "pytest>=8.4.2",
+    "pytest>=9.0.2",
 ]
 
 [build-system]
