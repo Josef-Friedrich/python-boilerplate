@@ -47,4 +47,4 @@ lint:
 	uv tool run ruff check
 
 type_check:
-	uv tool run mypy typings src/python_boilerplate tests
+	uv run mypy typings src/python_boilerplate tests

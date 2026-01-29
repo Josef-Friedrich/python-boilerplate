@@ -37,6 +37,7 @@ Repository = "https://github.com/Josef-Friedrich/python-project-boilerplate"
 [dependency-groups]
 dev = [
     "beautifulsoup4>=4.14.3",
+    "mypy>=1.19.1",
     "pytest>=9.0.2",
 ]
 

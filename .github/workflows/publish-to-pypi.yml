@@ -10,7 +10,6 @@
 # https://docs.pypi.org/trusted-publishers/
 # https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/
 
-
 name: Build and Publish to PyPI
 
 on:
