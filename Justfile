@@ -1,4 +1,4 @@
-all: test format docs lint type_check
+all: update test format docs lint type_check
 
 test:
 	uv run --isolated --python=3.12 pytest -m "not (slow or gui)"
