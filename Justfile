@@ -32,11 +32,11 @@ format:
 docs: docs_readme_patcher docs_sphinx
 
 docs_readme_patcher:
-	uv tool run --isolated readme-patcher
+	uv tool run --isolated --no-cache readme-patcher
 
 docs_sphinx:
 	rm -rf docs/_build
-	uv tool run --isolated --from sphinx --with . --with sphinx_rtd_theme --with sphinx-argparse sphinx-build -W -q docs docs/_build
+	uv tool run --isolated --no-cache --from sphinx --with . --with sphinx_rtd_theme --with sphinx-argparse sphinx-build -W -q docs docs/_build
 	xdg-open docs/_build/index.html
 
 pin_docs_requirements:
