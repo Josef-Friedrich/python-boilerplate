@@ -1,6 +1,8 @@
 [project]
 name = "python_boilerplate"
 # https://packaging.python.org/en/latest/specifications/version-specifiers/#version-specifiers
+# v1.0.0-alpha -> 1.0.0a0
+# v1.0.0-alpha.1 -> 1.0.0a1
 version = "0.1.0"
 description = "A collection of boilerplate files and templates for my Python projects."
 authors = [{ name = "Josef Friedrich", email = "josef@friedrich.rocks" }]
