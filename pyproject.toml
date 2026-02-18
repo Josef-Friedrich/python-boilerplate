@@ -5,7 +5,8 @@ description = "A collection of boilerplate files and templates for my Python pro
 authors = [{ name = "Josef Friedrich", email = "josef@friedrich.rocks" }]
 requires-python = ">=3.12"
 readme = "README.rst"
-license = { text = "MIT" }
+# https://packaging.python.org/en/latest/specifications/pyproject-toml/#license
+license = "MIT"
 classifiers = [
     "Private :: Do not Upload",
     "Development Status :: 5 - Production/Stable",
