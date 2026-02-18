@@ -59,7 +59,7 @@ pin_docs_requirements:
 
 # Run ruff check
 lint:
-	uv tool run ruff check
+	uv tool run ruff check --fix
 
 # Perform type checking using mypy
 type_check:

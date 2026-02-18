@@ -1,5 +1,8 @@
 [project]
 name = "python_boilerplate"
+# https://packaging.python.org/en/latest/specifications/version-specifiers/#version-specifiers
+# v1.0.0-alpha -> 1.0.0a0
+# v1.0.0-alpha.1 -> 1.0.0a1
 version = "0.1.0"
 description = "A collection of boilerplate files and templates for my Python projects."
 authors = [{ name = "Josef Friedrich", email = "josef@friedrich.rocks" }]
@@ -43,7 +46,7 @@ dev = [
 ]
 
 [build-system]
-requires = ["uv_build>=0.9.26,<0.10.0"]
+requires = ["uv_build>=0.10.2,<0.11.0"]
 build-backend = "uv_build"
 
 # Single file, for example ./userdetect.py
