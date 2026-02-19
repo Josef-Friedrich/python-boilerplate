@@ -29,8 +29,14 @@ dependencies = [
     "jinja2>=3.1.6",
 ]
 
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#urls
 [project.urls]
+# Homepage = "https://example.com"
+Documentation = "https://jf-python-project-boilerplate.readthedocs.io"
 Repository = "https://github.com/Josef-Friedrich/python-project-boilerplate"
+Issues = "https://github.com/Josef-Friedrich/python-boilerplate/issues"
+Changelog = "https://github.com/Josef-Friedrich/python-boilerplate/blob/main/CHANGELOG.md"
+
 
 [project.scripts]
 "python-project-boilerplate.py" = "python_boilerplate:print_version"
