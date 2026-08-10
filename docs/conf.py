@@ -1,6 +1,6 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-from datetime import datetime
+import datetime
 from importlib.metadata import version as get_version
 
 html_theme = "sphinx_rtd_theme"
@@ -13,7 +13,7 @@ extensions: list[str] = [
 ]
 
 project = "Python project boilerplate"
-copyright: str = f"2022-{datetime.now().year}, Josef Friedrich"
+copyright: str = f"2022-{datetime.datetime.now(tz=datetime.UTC).year}, Josef Friedrich"
 author = "Josef Friedrich"
 
 version: str = get_version("python_boilerplate")

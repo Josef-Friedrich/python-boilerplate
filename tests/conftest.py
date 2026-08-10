@@ -4,8 +4,9 @@ from __future__ import annotations
 
 import os
 import shutil
+from collections.abc import Callable, Generator
 from pathlib import Path
-from typing import Any, Callable, Generator, Union
+from typing import Any
 
 import pytest
 
@@ -42,8 +43,8 @@ def files_dir() -> Path:
 
 
 @pytest.fixture
-def copy_to_tmp(tmp_path: Path, files_dir: Path) -> Callable[[Union[str, Path]], Path]:
-    def _copy(src: Union[str, Path]) -> Path:
+def copy_to_tmp(tmp_path: Path, files_dir: Path) -> Callable[[str | Path], Path]:
+    def _copy(src: str | Path) -> Path:
         """
         Copy a file from the specified source path within the ``tests/files`` to a temporary directory.
 

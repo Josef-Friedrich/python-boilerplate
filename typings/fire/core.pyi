@@ -1,4 +1,5 @@
-from typing import Any, Callable, Sequence
+from collections.abc import Callable, Sequence
+from typing import Any
 
 from _typeshed import Incomplete
 from fire import completion as completion

@@ -1,7 +1,7 @@
 import fire
 
 
-class Calculator(object):
+class Calculator:
     """A simple calculator class."""
 
     def double(self, number: float):

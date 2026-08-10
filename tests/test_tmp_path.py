@@ -1,5 +1,5 @@
+from collections.abc import Callable
 from pathlib import Path
-from typing import Callable
 
 
 def test_tmp_path(tmp_path: Path) -> None:
